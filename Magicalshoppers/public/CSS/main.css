@@ -1,0 +1,141 @@
+.appLogo {
+    width: 60px;
+    height: 60px;
+}
+
+header {
+    padding: 5px;
+    background-color: hsl(222, 95%, 29%);
+    /* background-image: linear-gradient(hsl); */
+    box-shadow: 2px 2px 2px #ccc;
+}
+
+footer {
+    text-align: center;
+    font-size: 12px;
+    background-color: yellowgreen;
+}
+
+.pageMainBlock {
+    min-height: 600px;
+    background-color: white;
+}
+
+.appTitle {
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.loginBlock {
+   border: 1px solid;
+   margin: 10px auto;
+   border-radius: 10px;
+   box-shadow: 5px 5px 5px #fff;
+   min-height: 400px;
+   width: 500px;
+   background-color: bisque;
+}
+
+.loginBlock li{
+    list-style: none;
+    margin: 10px;
+}
+
+/* Captcha CSS */
+.captchBox{
+    color:#555;
+    text-align:center;
+    border:1px solid #dfd7d7;
+    font-family:Papyrus; /*"Brush Script MT"; */
+    line-height: 50px;
+    height: 50px;
+    letter-spacing: 8px;
+    font-size: 25px;
+    font-weight: bold;
+    user-select: none;
+    margin-right: 2px;
+}
+
+.captchInputDiv img{
+    width: 35px;
+    height: 30px;
+    background: #6def41;
+    border: 1px solid #c1b2b2;
+}
+
+#captchInputBox{
+    width:240px;
+    margin-left: 5px;
+    text-align: center;
+    letter-spacing: 2px;
+    height: 30px;
+    background: #e2d4d4;
+    border: none;
+    outline: none;
+}
+.captchInputDiv{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 35px;
+    border-radius: 10px;
+    display: flex;
+}
+/* Captcha CSS */
+
+.invalidCredential {
+    text-align: center;
+    font-size: 11px;
+    color: red;
+    display: none;
+}
+
+.pdetailsBlock {
+    display: grid;
+    grid-template-columns: 200px auto;
+}
+
+.categoryList {
+ border-right: 1px solid;
+ min-height: 500px;
+ margin: 5px;
+ padding: 5px;
+}
+
+.categoryList li {
+    list-style: none;
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid;
+}
+
+.categoryList li:hover {
+background-color: aquamarine;
+cursor: pointer;
+}
+
+#productDetailsContainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#productDetailsContainer > div {
+    width: 300px;
+    box-shadow: 5px 5px 5px #ccc;
+    margin-bottom: 10px;
+    padding: 10px;
+    word-wrap: break-word;
+}
+
+#productDetailsContainer li img {
+    width: 120px;
+    height: 130px;
+}
+
+li {
+    list-style: none;
+}
+
+#productDetailsContainer {
+    box-shadow: 3px 3px 3px #ccc;
+}

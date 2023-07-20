@@ -1,0 +1,53 @@
+<div class="loginBlock">
+  <div class="container">
+    <ul>
+      <li class="text-center display-4">New User signup</li>
+      <li>
+        <input
+          type="text"
+          class="form-control"
+          placeholder="User ID"
+          id="uId"
+        />
+      </li>
+      <li>
+        <input
+          type="password"
+          class="form-control"
+          placeholder="Account Password"
+        />
+      </li>
+      <li>
+        <input
+          type="password"
+          class="form-control"
+          placeholder="Reenter Account Password"
+          id="upassword"
+        />
+      </li>
+      <li>
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Enter Account mailID"
+          id="umailId"
+        />
+      </li>
+      <li>
+        <input
+          type="button"
+          class="btn btn-primary"
+          value="Register"
+          onclick="registerNewUser()"
+        />
+        <input
+          type="button"
+          class="btn btn-primary"
+          value="BackToLogin"
+          onclick="loadSelectedPage('login')"
+        />
+      </li>
+      <li id="rblock"></li>
+    </ul>
+  </div>
+</div>

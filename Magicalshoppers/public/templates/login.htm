@@ -1,0 +1,66 @@
+<div class="loginBlock">
+  <div class="container">
+    <ul>
+      <li>
+        <input
+          type="text"
+          id="uid"
+          class="form-control"
+          placeholder="User ID"
+        />
+      </li>
+      <li>
+        <input
+          type="password"
+          class="form-control"
+          placeholder="Account Password"
+          id="accountPwd"
+        />
+      </li>
+
+      <li>
+        <label>Enter Captcha</label>
+        <div class="captchBox"></div>
+        <div class="captchInputDiv">
+          <input
+            id="captchInputBox"
+            class="userCapchaText"
+            type="text"
+            placeholder="Enter below text"
+            onkeyup="validateCapchaText()"
+          />
+          <img src="../images/refreshButton.jpeg" onclick="getCaptcha()" />
+        </div>
+      </li>
+
+      <li>
+        <input
+          type="button"
+          value="Login"
+          class="btn btn-primary"
+          disabled
+          id="loginBtn"
+          onclick="validateUserDetails()"
+        />
+      </li>
+
+      <li>
+        <a
+          href="#newSignup"
+          class="link-underline-primary"
+          onclick="loadSelectedPage('signup')"
+          >New User?</a
+        >
+        <a
+          href="#forgotPwd"
+          class="link-underline-primary"
+          onclick="loadSelectedPage('frgtPwd')"
+          >Forgot Password</a
+        >
+      </li>
+      <li class="invalidCredential">
+        <span id="errorMsg">User details are invalid</span>
+      </li>
+    </ul>
+  </div>
+</div>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SignUp</title>
+    <link rel="stylesheet" href="./CSS/signup.css" />
+  </head>
+
+  <body class="bgSignup">
+    <ul class="ulsignup">
+      <li class="lisignUp">
+        Username:
+        <input
+          type="text"
+          id="userName"
+          onkeypress="return validateUserName(event)"
+        />
+        <div class="error userNameError">
+          User Name is Mandate. Must contain Characters without spaces.
+        </div>
+      </li>
+
+      <li class="lisignUp">
+        Password:
+        <input type="password" id="userPwd" />
+        <div class="error userPwdError">Password Rules not matching.</div>
+      </li>
+      <ul>
+        <li class="pwdcondition" id="condtn1">
+          Total Password Length should be 8
+        </li>
+        <li class="pwdcondition" id="condtn2">
+          First Letter Should Be Upper Case
+        </li>
+        <li class="pwdcondition" id="condtn3">Minimum 3 characters required</li>
+        <li class="pwdcondition" id="condtn4">Minimum 2 symbols required</li>
+        <li class="pwdcondition" id="condtn5">Should have min one number</li>
+        <li class="pwdcondition" id="condtn6">Should not end with number</li>
+      </ul>
+
+      <li class="lisignUp">
+        Confirm Password:
+        <input type="password" id="confirmPwd" />
+        <div class="error confirmPwdError">Password not matching</div>
+      </li>
+
+      <li class="lisignUp">
+        Mobile No:
+        <input
+          type="text"
+          id="mobileNo"
+          onkeypress="return validateMobNumber(event)"
+        />
+        <div class="error mobileNoError">
+          Must be a 10 digit number. First place must not contain digit 0.
+        </div>
+      </li>
+
+      <li class="lisignUp">
+        Email Id:
+        <input type="email" id="emailID" />
+        <div class="error emailError">
+          Enter valid email address.
+        </div>
+      </li>
+
+      <li class="submitbtn" <a href="./homePage.html"></a>
+        
+        <input
+          type="button"
+          value="Submit"
+          id="subbtn"
+          onclick="validateSignupDetails();location.href = './homePage.html'"
+        />
+      </li>
+    </ul>
+    <script src="./JS/signup.js"></script>
+  </body>
+</html>

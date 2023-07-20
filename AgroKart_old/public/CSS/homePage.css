@@ -1,0 +1,106 @@
+/* ul{
+    height: 270px;
+    width: 400px;
+    border-style: double;
+    border: 2px solid;
+    padding: 20px;
+    margin: auto;
+    margin-top: 200px;
+    background-color: gainsboro;
+    border-color: rgba(0, 128, 0, 0.855);
+    border-width: 3px;
+    border-radius: 10px;
+} */
+
+.ulhomepage{
+    position: absolute;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    margin-top: 180px;
+    height: 270px;
+    width: 400px;
+    border-style: double;
+    border: 2px solid;
+    padding: 20px;
+    background-color: gainsboro;
+    border-color: rgba(0, 128, 0, 0.855);
+    border-width: 3px;
+    border-radius: 10px;
+}
+
+
+
+.frgtpwd{
+    position: absolute;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    margin-top: 250px;
+    height: 150px;
+    width: 300px;
+    border: 2px solid;
+    padding: 20px;
+    background-color: gainsboro;
+    border-color: rgba(0, 128, 0, 0.855);
+    border-width: 3px;
+    border-radius: 10px;
+}
+
+li{
+    list-style: none;
+    margin: 20px;
+    font-size: large;
+    font-weight: bold;
+}
+
+.lihomepage{
+    text-align: center;
+    color: black;
+}
+
+
+.inputBox{
+    height: 25px;
+    width: 150px
+    
+}
+input.myButton{
+    height: 25px;
+    width: 100px;
+
+}
+.bgimage{
+    background-image: url("/images/image5.jpg");
+    background-size: cover;
+}
+div{
+    left: 5px;
+    right: 5px;
+    margin: auto;
+    text-align: center;
+    text-decoration: solid;
+    font-weight: bolder;
+    background-color: gainsboro;
+    height: auto;
+}
+
+.headblock{
+    position: relative;
+    font-size: 50px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: hsl(222, 95%, 29%);
+    top: 5px;
+    font-weight:bolder;
+
+}
+
+.footblock{
+    position: absolute;
+    bottom: 5px;
+    font-size: medium;
+    font-style: oblique;
+}
+
