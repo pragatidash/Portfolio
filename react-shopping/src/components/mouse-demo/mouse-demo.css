@@ -1,0 +1,24 @@
+/* img:hover{
+    cursor:grab;
+}
+.preview-image:hover{
+    transform: scale(1.5);
+    transition: 2s;
+}
+.preview-image{
+    transition: 2s;
+} */
+
+/* marquee {
+    padding: 100px;
+}
+
+img:hover{
+    transform: scale(1.5);
+    box-shadow: 4px 4px 3px black;
+    transition: 3s;
+}
+
+img{
+    transition: 3s;
+} */

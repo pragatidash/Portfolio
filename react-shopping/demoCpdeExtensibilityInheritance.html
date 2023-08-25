@@ -1,0 +1,59 @@
+<script>
+    class HDFC_Bank_Version1
+    {
+        Personal = "Personal Banking Services";
+        NRI = "NRI Banking Services";
+        print(){
+            document.write(`${this.Personal}<br>${this.NRI}<br>`);
+        }
+    }
+    class HDFC_Bank_Version2 extends HDFC_Bank_Version1
+    {
+        Loans = "Personal and Housing Loans";
+        print(){
+            super.Print();
+            document.write(`${this.Loans}<br>`); //inheritance
+        }
+    }
+    class HDFC_Bank_Version3 extends HDFC_Bank_Version2
+    {
+        AGRI = "Govt. Bank Schemes";
+        Print(){
+            super.Print();
+            document.write(`${this.AGRI}<br>`);
+        }
+    }
+
+    function InstallClick(){
+        switch(document.getElementById("lstVersions").value){
+            case "ver1":
+                var obj1 = new HDFC_Bank_Version1();
+                document.write("<h2>You Installed Version-1</h2>");
+                obj1.print();
+                break;
+            case "ver2":
+                var obj2 = new HDFC_Bank_Version2();
+                document.write("<h2>You Installed Version-2</h2>");
+                obj2.print();
+                break;
+            case "ver3":
+                var obj3 = new HDFC_Bank_Version3();
+                document.write("<h2>You Installed Version-3</h2>");
+                obj3.print(); //multilevel inheritance
+                break;
+                default:
+                document.write("Please Select a Version to Install");
+                break;
+        }
+    }
+</script>
+<body>
+    <h2>Select Bank App Version</h2>
+    <select id="lstVersions">
+        <option value="-1">Select Version</option>
+        <option value="ver1">Version-1</option>
+        <option value="ver2">Version-2</option>
+        <option value="ver3">Version-3</option>
+    </select> 
+    <button onclick="InstallClick()">Install</button>
+</body>
